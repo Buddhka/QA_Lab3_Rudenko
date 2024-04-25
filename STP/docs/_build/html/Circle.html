@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="ru" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Circle module &#8212; документация circle 0.0.1</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=fd3f3429" />
+    <script src="_static/documentation_options.js?v=ba58aea8"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=29b1f277"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="Cylinder module" href="Cylinder.html" />
+    <link rel="prev" title="STP" href="modules.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-Circle">
+<span id="circle-module"></span><h1>Circle module<a class="headerlink" href="#module-Circle" title="Link to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Circle.Circle">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Circle.</span></span><span class="sig-name descname"><span class="pre">Circle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Circle.Circle" title="Link to this definition">¶</a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Circle.Circle.additionCircle">
+<span class="sig-name descname"><span class="pre">additionCircle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">secondCircle</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Circle.Circle.additionCircle" title="Link to this definition">¶</a></dt>
+<dd><p>Данный метод складывает два объекта класса и возвращает объект этого же класса.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>firstCircle (Circle): Аргумент, являющийся первым слагаемым типа Circle.
+secondCircle (Circle): Аргумент, являющийся вторым слагаемым типа Circle.</p>
+</dd>
+<dt>Returns:</dt><dd><p>Circle: Объект класса Circle.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Circle.Circle.areaOfCircle">
+<span class="sig-name descname"><span class="pre">areaOfCircle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Circle.Circle.areaOfCircle" title="Link to this definition">¶</a></dt>
+<dd><p>Данный метод вычисляет площадь окружности.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>float: Площадь окружности.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Circle.Circle.areaOfSector">
+<span class="sig-name descname"><span class="pre">areaOfSector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Circle.Circle.areaOfSector" title="Link to this definition">¶</a></dt>
+<dd><p>Данный метод вычисляет площадь сектора.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>angle (int): Аргумент, являющийся углом от центра окружности.</p>
+</dd>
+<dt>Returns:</dt><dd><p>float: Площадь сектора.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Circle.Circle.areaOfSegment">
+<span class="sig-name descname"><span class="pre">areaOfSegment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Circle.Circle.areaOfSegment" title="Link to this definition">¶</a></dt>
+<dd><p>Данный метод вычисляет площадь сегмента, заданного углом.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>angle (int): Аргумент, являющийся углом от центра окружности.</p>
+</dd>
+<dt>Returns:</dt><dd><p>float: Площадь сегмента.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Circle.Circle.calculateRadius">
+<span class="sig-name descname"><span class="pre">calculateRadius</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Circle.Circle.calculateRadius" title="Link to this definition">¶</a></dt>
+<dd><p>Данный метод вычисляет радиус-вектор.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>int, float: Расстояние до центра окружности.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Circle.Circle.inputCircleData">
+<span class="sig-name descname"><span class="pre">inputCircleData</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Circle.Circle.inputCircleData" title="Link to this definition">¶</a></dt>
+<dd><p>Данный метод позволяет редактировать поля объекта класса.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Circle.Circle.lengthOfCircle">
+<span class="sig-name descname"><span class="pre">lengthOfCircle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Circle.Circle.lengthOfCircle" title="Link to this definition">¶</a></dt>
+<dd><p>Данный метод вычисляет длину окружности.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>float: Длина окружности.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<img alt="_images/pic.png" src="_images/pic.png" />
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">circle</a></h1>
+
+
+
+
+
+
+
+
+<h3>Навигация</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">STP</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Circle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Cylinder.html">Cylinder module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="testing.html">testing module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sphere.html">Sphere module</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">STP</a><ul>
+      <li>Previous: <a href="modules.html" title="предыдущая глава">STP</a></li>
+      <li>Next: <a href="Cylinder.html" title="следующая глава">Cylinder module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Быстрый поиск</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Искать" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, rak.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.3.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/Circle.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

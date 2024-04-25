@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="ru" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>testing module &#8212; документация circle 0.0.1</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=fd3f3429" />
+    <script src="_static/documentation_options.js?v=ba58aea8"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=29b1f277"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="Sphere module" href="Sphere.html" />
+    <link rel="prev" title="Cylinder module" href="Cylinder.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-testing">
+<span id="testing-module"></span><h1>testing module<a class="headerlink" href="#module-testing" title="Link to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="testing.TestCircleAndCylinderMethods">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">testing.</span></span><span class="sig-name descname"><span class="pre">TestCircleAndCylinderMethods</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#testing.TestCircleAndCylinderMethods" title="Link to this definition">¶</a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="testing.TestCircleAndCylinderMethods.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#testing.TestCircleAndCylinderMethods.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Данный метод позволяет определить инструкции, которые будут выполняться перед и после каждого метода тестирования.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="testing.TestCircleAndCylinderMethods.testAreaOfCircle">
+<span class="sig-name descname"><span class="pre">testAreaOfCircle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#testing.TestCircleAndCylinderMethods.testAreaOfCircle" title="Link to this definition">¶</a></dt>
+<dd><p>Данный метод тестирует расчет площади окружности, которая не может быть равна 0. В данном случае(если равна 0), окружность будет являться точкой.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="testing.TestCircleAndCylinderMethods.testAreaOfSector">
+<span class="sig-name descname"><span class="pre">testAreaOfSector</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#testing.TestCircleAndCylinderMethods.testAreaOfSector" title="Link to this definition">¶</a></dt>
+<dd><p>Данный метод тестирует площадь сектора окружности, которая должна находиться в пределах от 0 до S. В нижней границе(0) сектор не будет существовать,
+в верхней(S) он будет являться всей окружностью.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="testing.TestCircleAndCylinderMethods.testAreaOfSegment">
+<span class="sig-name descname"><span class="pre">testAreaOfSegment</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#testing.TestCircleAndCylinderMethods.testAreaOfSegment" title="Link to this definition">¶</a></dt>
+<dd><p>Данный метод тестирует площадь сегмента окружности, которая должна находиться в пределах от 0 до S. В нижней границе(0) сегмент не будет существовать,
+в верхней(S) он будет являться всей окружностью.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="testing.TestCircleAndCylinderMethods.testAreaOfSphere">
+<span class="sig-name descname"><span class="pre">testAreaOfSphere</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#testing.TestCircleAndCylinderMethods.testAreaOfSphere" title="Link to this definition">¶</a></dt>
+<dd><p>Данный метод тестирует расчет площади сферы, которая не может быть меньше 0.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="testing.TestCircleAndCylinderMethods.testCalculateRadius">
+<span class="sig-name descname"><span class="pre">testCalculateRadius</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#testing.TestCircleAndCylinderMethods.testCalculateRadius" title="Link to this definition">¶</a></dt>
+<dd><p>Данный метод тестирует расчет радиус-окружности, который не может быть равен 0. Вообще он может, но для складности теста не сможет.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="testing.TestCircleAndCylinderMethods.testFullSurfaceArea">
+<span class="sig-name descname"><span class="pre">testFullSurfaceArea</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#testing.TestCircleAndCylinderMethods.testFullSurfaceArea" title="Link to this definition">¶</a></dt>
+<dd><p>Данный метод тестирует расчет площади всех сторон цилиндра, которая не может быть равна 0.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="testing.TestCircleAndCylinderMethods.testLateralSurfaceArea">
+<span class="sig-name descname"><span class="pre">testLateralSurfaceArea</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#testing.TestCircleAndCylinderMethods.testLateralSurfaceArea" title="Link to this definition">¶</a></dt>
+<dd><p>Данный метод тестирует расчет площади боковой поверхности цилиндра, которая не может быть равна 0.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="testing.TestCircleAndCylinderMethods.testLengthOfCircle">
+<span class="sig-name descname"><span class="pre">testLengthOfCircle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#testing.TestCircleAndCylinderMethods.testLengthOfCircle" title="Link to this definition">¶</a></dt>
+<dd><p>Данный метод тестирует расчет длины окружности, которая не может быть равна 0. В данном случае(если равна 0), окружность будет являться точкой.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="testing.TestCircleAndCylinderMethods.testVolumeOfCylinder">
+<span class="sig-name descname"><span class="pre">testVolumeOfCylinder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#testing.TestCircleAndCylinderMethods.testVolumeOfCylinder" title="Link to this definition">¶</a></dt>
+<dd><p>Данный метод тестирует расчет объема цилиндра, который не должен быть равен 0.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="testing.TestCircleAndCylinderMethods.testVolumeOfSphere">
+<span class="sig-name descname"><span class="pre">testVolumeOfSphere</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#testing.TestCircleAndCylinderMethods.testVolumeOfSphere" title="Link to this definition">¶</a></dt>
+<dd><p>Данный метод тестирует расчет объема сферы, который не может быть меньше 0.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">circle</a></h1>
+
+
+
+
+
+
+
+
+<h3>Навигация</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">STP</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Circle.html">Circle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Cylinder.html">Cylinder module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">testing module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sphere.html">Sphere module</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">STP</a><ul>
+      <li>Previous: <a href="Cylinder.html" title="предыдущая глава">Cylinder module</a></li>
+      <li>Next: <a href="Sphere.html" title="следующая глава">Sphere module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Быстрый поиск</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Искать" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, rak.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.3.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/testing.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
