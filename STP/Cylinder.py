@@ -1,6 +1,6 @@
 from Circle import Circle
 import math
-class Cylinder(Circle):
+class Cylinder(Circle): """Предствляет собой объект, наследующий две координаты центра и радиус от главенствующего класса, добавляя также высоту фигуры."""
     def __init__(self, x = 1, y = 1, radius = 1, height = 1):
         """Конструктор объекта класса
 
