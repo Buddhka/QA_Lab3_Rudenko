@@ -3,7 +3,7 @@ from Circle import Circle
 from Cylinder import Cylinder
 from Sphere import Sphere
 import unittest
-class TestCircleAndCylinderMethods(unittest.TestCase):
+class TestCircleAndCylinderMethods(unittest.TestCase): """Данный класс описывает методы тестирования функций, описанных в модулях Circle, Cylinder, Sphere."""
     def setUp(self):
         """Данный метод позволяет определить инструкции, которые будут выполняться перед и после каждого метода тестирования.
         """
