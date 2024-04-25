@@ -1,6 +1,6 @@
 from Circle import Circle
 import math
-class Sphere(Circle):
+class Sphere(Circle): """Представляет собой объект класса, наследующий от главенствующего две координаты центра и радиус."""
     def __init__(self, x = 1, y = 1, radius = 1):
         """Конструктор объекта класса
 
